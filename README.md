@@ -12,6 +12,11 @@ Cette application est une simple interface graphique créée avec Tkinter en Pyt
 ## Prérequis
 - Windows 10 / 11
 
+## Source code
+Pour l'ouverture du source code, il vous faut ces prérequis.
+- Python 3.x
+- Tkinter (généralement inclus dans les installations standard de Python)
+
 ## Utilisation
 
 1. Ouvrez votre explorateur de fichier.
