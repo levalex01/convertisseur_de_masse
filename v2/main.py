@@ -2,7 +2,7 @@ from tkinter import *
 import emoji
 root = Tk()
 root.geometry("300x400")
-root.title(" ton poid ")
+root.title(" ton poids ")
 
 
 #--------------------------------------------------------------------------
