@@ -1,12 +1,12 @@
 # Application Tkinter: Calculateur de Poids
 
 ## Description
-Cette application est une simple interface graphique créée avec Tkinter en Python. Elle permet à l'utilisateur de saisir son poids en livres (lb) et d'afficher ce poids dans une zone de texte. L'application dispose également de fonctionnalités pour effacer l'entrée et quitter l'application.
+Cette application est une simple interface graphique créée avec Tkinter en Python. Elle permet à l'utilisateur de saisir un poids en livres (lb) ou en Kilogramme (Kg) et d'afficher ce poids transformer sois en Kg ou en Lb dans une zone de texte.
 
 ## Fonctionnalités
 - **Saisie du poids**: Permet à l'utilisateur de saisir son poids en livres ou en Kilo.
 - **Affichage du poids**: Affiche le poids saisi par l'utilisateur dans une zone de texte.
-- **permet la convertion**: Maintenant vous pouvez faire la convertion entre Kilo à Livre / Livre à Kilo.
+- **permet la convertion**: Vous pouvez faire la convertion entre Kilo à Livre / Livre à Kilo.
 - **Effacer**: Efface le poids saisi et l'affichage.
 - **Quitter**: Ferme l'application.
 
