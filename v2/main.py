@@ -2,7 +2,7 @@ from tkinter import *
 import emoji
 root = Tk()
 root.geometry("300x400")
-root.title(" ton poids ")
+root.title(" convertisseur de masse ")
 
 
 #--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ def Kg_to_Lb():
     try:
         kg = float(INPUT)
         lb = round(kg * 2.205, 2)
-        Output.insert(END, f"Ton poids est de {lb} LB\n")
+        Output.insert(END, f"Le poids est de {lb} LB\n")
     except ValueError:
         Output.insert(END, emoji.emojize("oups une erreur est survenue\n 🙃"))
 
@@ -31,7 +31,7 @@ def Lb_to_Kg():
     try:
         lb = float(INPUT)
         kg = round(lb / 2.205, 2)
-        Output.insert(END, f"Ton poids est de {kg} Kg\n")
+        Output.insert(END, f"Le poids est de {kg} Kg\n")
     except ValueError:
         Output.insert(END, emoji.emojize("oups une erreur est survenue\n 🙃"))
 
@@ -44,7 +44,7 @@ def exit():
 
 #--------------------------------------------------------------------------
      
-l = Label(text = "Quelle est ton poids")
+l = Label(text = "Quelle est le poids")
 
 inputtxt = Text(root, height = 1,
                 width = 100,
