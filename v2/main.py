@@ -1,9 +1,16 @@
+#--------------------------
+# Dépendance
+
 from tkinter import *
 import emoji
+#-------------------------
+
+#-------------------------
+#inforamtion sur la page
 root = Tk()
 root.geometry("300x400")
 root.title(" convertisseur de masse ")
-
+#-------------------------
 
 #--------------------------------------------------------------------------
 # definition des variables
@@ -15,7 +22,10 @@ def clear():
     Output.delete("1.0", "end-1c")
     inputtxt.delete("1.0", "end-1c")
 #---------------------------------------
-# Deffinition de Kg to Lb & Lb to Kg
+
+#---------------------------------------
+# Défénition de variable pour la 
+# conversion entre Kg to Lb & Lb to Kg
 
 def Kg_to_Lb():
     INPUT = inputtxt.get("1.0", "end-1c")
@@ -43,7 +53,11 @@ def exit():
 #-------------------------------------
 
 #--------------------------------------------------------------------------
-     
+
+
+#-------------------------------------
+# Propriété de la page
+
 l = Label(text = "Quelle est le poids")
 
 inputtxt = Text(root, height = 1,
@@ -63,22 +77,24 @@ lb_to_kg = Button(root, height = 2,
                  text ="Lb à Kg",
                  command = lambda:Lb_to_Kg())
 
-Display2 = Button(root, height = 2,
+Clear = Button(root, height = 2,
                  width = 20, 
                  text ="Clear",
                  command = lambda:clear())
 
 exit_button = Button(root, height = 15,
                  width = 20,  text="Exit", command=root.destroy) 
-root.bind("<Escape>", lambda event:exit())
 
-  
-l.pack()
-inputtxt.pack()
-Kg_to_lb.pack(pady=20)
-lb_to_kg.pack(pady=20)
-Output.pack()
-Display2.pack()
-exit_button.pack(pady=20)
+
+root.bind("<Escape>", lambda event:exit()) # Touche sur le clavier pour faire l'application
+
+# Suite des éléments sur la page
+l.pack() # titre
+inputtxt.pack() # entrée de la donner
+Kg_to_lb.pack(pady=20) # La type de conversion
+lb_to_kg.pack(pady=20) # La type de conversion
+Output.pack()  # sortie de la donnée
+Clear.pack() # Vide les zone de donnée
+exit_button.pack(pady=20) # boutton pour la sortie
 
 mainloop()
