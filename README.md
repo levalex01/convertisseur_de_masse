@@ -4,7 +4,7 @@
 Cette application est une simple interface graphique créée avec Tkinter en Python. Elle permet à l'utilisateur de saisir un poids en livres (lb) ou en Kilogramme (Kg) et d'afficher ce poids transformer sois en Kg ou en Lb dans une zone de texte.
 
 ## Fonctionnalités
-- **Saisie du poids**: Permet à l'utilisateur de saisir son poids en livres ou en Kilo.
+- **Saisie du poids**: Permet à l'utilisateur de saisir un poids en livres ou en Kilo.
 - **Affichage du poids**: Affiche le poids saisi par l'utilisateur dans une zone de texte.
 - **permet la convertion**: Vous pouvez faire la convertion entre Kilo à Livre / Livre à Kilo.
 - **Effacer**: Efface le poids saisi et l'affichage.
